@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/207585c7cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         .ab{
-            height: 300px;
+            height: 200px;
             border: 1px solid salmon;
         }
         .col-sm-4{
@@ -22,14 +20,27 @@
         }
     </style>
     <body>
-    <nav class=" nav navbar-inverse">
-        <ul class="nav navbar-nav">
-            <li><a href ="#">Link1</a></li>
-            <li><a href = "#">link2</a></li>
-        </ul>
+        <div class="container-fluid">  
+      <nav class=" nav navbar-dark bg-dark  navbar-expand-sm fixed-top  ">
         
-    </nav>
-         <div class="has-bg-img" class="hero-wrap" > 
+        <div class="  navbar-header">
+            <a  class="navbar-brand" href=""><h1>PORTFOLIO</h1></a>  
+             </div>
+             <div class="container-fluid">
+           <ul class="nav navbar-nav " style="margin-left: 200px;" >
+            <li class="nav-item active " ><a  class ="nav-link" href ="#home">Home</a></li>
+            <li class="nav-item"><a class ="nav-link" href = "#about">About</a></li>
+            <li class="nav-item"><a class ="nav-link" href = "#skills">Skills</a></li>
+            <li class="nav-item"><a class ="nav-link" href = "#experiance">Experiance</a></li>
+           </ul>
+              <ul class="float-right"> 
+             <a  class="btn btn-outline-warning" href="#contact" >Contact</a>
+            </ul>
+       
+         </div>
+        </nav>
+        </div>
+         <div class="has-bg-img" class="hero-wrap" id="home"> 
          <img class="bg-img" src="./public/image/anas-alshanti-feXpdV001o4-unsplash.jpg" alt="" width="100%">
           <div class="jumbotron text-center"  >
             <div class="intro" style ="margin-top: -60%;"> 
@@ -38,7 +49,7 @@
             </div>
             <div class="container-fluid">
                 <div class="row ab  " >
-                    <div class="col-sm-2" id="p1" style="border: 1px solid rgb(251, 37, 13); ">
+                    <div class="col-sm-2" id="p1" style="border: 1px solid rgb(251, 37, 13); " >
                         <a href="#">
                             <i class="material-icons">perm_identity</i><br>
                             <span >About</span>
@@ -103,7 +114,7 @@
                     </div>
                 </div>  
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid" id="skills">
                 <div class="row" style="height: 700px;">
                     <div class="col-sm-6">
                         <img class="img-fluid " src="./public/image/download1.jpg" style="width:100%;">
@@ -127,8 +138,8 @@
 
                 </div>
             </div>
-            <div class="container-fluid " >
-                <div class="row  " style="height: 500px;">
+            <div class="container-fluid "  id="experiance">
+                <div class="row  " style="height: 700px;">
                     <div class="col-sm-6">
                         <img class="img-fluid" src="./public/image/photo-1483058712412-4245e9b90334.jpg" style="width: 100%;">
                     </div>
@@ -161,9 +172,12 @@
             </div>
            <div class="container-fluid">
                <div class="row">
-                   <h3>PROJECTS</h3>
+                   <div class="col-sm-6">
+                   <h4>PROJECTS</h4>
                    <h1>CHECK MY PROJECTS</h1>
-                   <div class="row">
+                   </div>
+                   </div>
+                    <div class="row">
                     <div class="col-sm-4"></div>   
                     <div class="col-sm-4">  
                    <ul class="nav nav-tabs  justified-center">
@@ -173,7 +187,7 @@
                        <li ><a href="#">SITES</a></li>
                    </ul>
                    </div>
-                   </div>
+                   </div> 
                    <div class="row">
                        <div class=col-sm-4>
                         <img   class ="img-fluid"src="./public/image/images.jpg">
@@ -187,22 +201,78 @@
                    </div>
                </div>
            </div> 
-           <div class="conainer-fluid " style="background-color: black;">
+           <div class="conainer-fluid " id="contact" style="background-color: black;">
                <div class="row">
-                   <div class="col-sm-4">
-                       <h1 > PORTFOLIO</h1>
-                       <h3>Sabna v v</h3>
-                       <h3>valliya veetil</h3>
-                       <h3>Ezhome 670334, Kannur</h3>
-                       <span style="font-size: x-large;"> Phone:7510929665</span><br>
-                       <span style= "font-size:x-large">Email:sabnavv32a2gmail.com</span>
-                       <a href="#" class="fa fa-twitter-square"></a>
+                   <div class="col-sm-3">
+                       <h1  style="color: beige;"> PORTFOLIO</h1>
+                       <h3 style="color: beige;">Sabna v v</h3>
+                       <h3 style="color: beige;">valliya veetil</h3>
+                       <h3 style="color: beige;">Ezhome 670334, Kannur</h3><br><br>
+                       <span style="font-size: x-large; color: beige;"> Phone:7510929665</span><br>
+                       <span style= "font-size:x-large; color: beige;">Email:sabnavv32a2gmail.com</span><br>
+                       <button class="fa fa-twitter-square"style="background-color: rgb(56, 50, 50);"></button>
+                       <button  class="fa fa-facebook"style="background-color: rgb(56, 50, 50);"></button>
+                       
+                       <button class="fa fa-instagram"style="background-color: rgb(56, 50, 50);"></button>
+                       <button class="fa fa-linkedin" style="background-color: rgb(52, 50, 59);"></button>
                     </div>
-                   
-           </div>
+                    <div class="col-sm-3">
+                      <h3 style="color: beige;">Useful Links</h3>
+                      <i class="material-icons" style="color: rgb(251, 255, 0);">
+                        chevron_right
+                        </i> <span style="font-size: larger; color: beige;"> Home</span><br>
+                        <i class="material-icons" style="color: rgb(251, 255, 0);">
+                            chevron_right
+                            </i> <span style="font-size: larger; color: rgb(241, 241, 211);"> About us</span><br>
+                            <i class="material-icons" style="color: rgb(251, 255, 0);">
+                                chevron_right
+                                </i> <span style="font-size: larger; color: beige;">Services</span><br>
+                                <i class="material-icons" style="color: rgb(251, 255, 0);">
+                                    chevron_right
+                                    </i><span style="font-size: larger; color: beige;">Terms of Services</span><br> 
+                                    <i class="material-icons" style="color: rgb(251, 255, 0);">
+                                        chevron_right
+                                        </i>  <span style="font-size: larger; color: beige;">Policy</span><br> 
+
+                    </div>
+                     
+                     <div class="col-sm-3">
+                      <h3 style="color: beige;">Our Services</h3>
+                      <i class="material-icons" style="color: rgb(251, 255, 0);">
+                        chevron_right
+                        </i> <span style="font-size: larger;color: beige;">Web Design</span><br>
+                        <i class="material-icons" style="color: rgb(251, 255, 0);">
+                            chevron_right
+                            </i> <span style="font-size: larger; color: beige;" > Web Development</span><br>
+                            <i class="material-icons" style="color: rgb(251, 255, 0);">
+                                chevron_right
+                                </i> <span style="font-size: larger; color: beige;">Product Management</span><br>
+                                <i class="material-icons" style="color: rgb(251, 255, 0);">
+                                    chevron_right
+                                    </i><span style="font-size: larger; color: beige;">Marketing</span><br> 
+                                    <i class="material-icons" style="color: rgb(251, 255, 0);">
+                                        chevron_right
+                                        </i>  <span style="font-size: larger; color: beige;">Graphic Design</span><br> 
+
+                                      </div>
+                                      <div class="col-sm-3">
+                                          <h2 style="color: beige;">Our Newsletter</h2>
+                                           <p style="color: beige;">Tamen quem nulla quae legam multos aute sint culpa legam nosrer manga</p>
+                                         <input type="text" style="height: 40px;"><span><button class="btn btn-warning"> Subscribe</button></span>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <footer>
+                                          <div class="container-fluid" style="background-color: rgb(30, 30, 34); text-align: center;">
+                                              <h4  style="color: beige;">@Copyright CR All Rights Reserved</h4>
+                                              <span style="color: beige;">Designed by</span>  <span style="color: rgb(240, 209, 10);"> Sabna v v</span>
+                                          </div>
+                                      </footer>
            
             
     
-        
+                                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>     
 </body>
 </html>
